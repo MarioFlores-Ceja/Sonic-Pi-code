@@ -1,0 +1,29 @@
+2. times do
+  sample :drum_heavy_kick
+  #print ("kick!")
+  sleep 0.5
+  
+end
+
+live_loop  :snare do
+  sample :drum_cymbal_closed
+  #print ("snare!")
+  sleep 1
+end
+
+sleep 3
+play :g5
+sleep 0.6
+play :e5
+sleep 0.5
+play :b4
+sleep 0.4
+play :c5
+sleep 0.2
+play :b4
+sleep 0.2
+play :b4
+sleep 0.2
+play :a4
+sleep 0.3
+play :d5
