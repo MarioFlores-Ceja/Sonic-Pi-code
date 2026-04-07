@@ -57,6 +57,8 @@ sample :drum_cymbal_closed
 #print ("snare!")
 sleep 0.6
 
+use_synth :piano play :a2, sustain:1
+
 use_synth :piano
 sleep 0.8
 play :g5
