@@ -1,29 +1,26 @@
 #TELEPHONES
 use_bpm 75
-use_synth :pluck
-play :b2
-play :d3
-play :d5
-play :a3
-sleep 1.6
-play :b2
-play :d3
-play :e3
-play :g3
-sleep 1.1
-play :a2
-play :c3
-play :d3
-play :f3
-sleep 1.6
-play :a2
-play :d3
+use_synth :piano
+play [:b2, :d3, :f3, :a3], sustain: 12
+sleep 2
+play [:b2, :d3, :f3, :a3], sustain: 12
+sleep 0.5
+play [:b2, :d3, :e3, :g3], sustain: 12
 sleep 1
-play :f3
-play :a3
-
-
-sleep 5
+play [:a2, :c3, :d3, :f3], sustain: 12
+sleep 1
+play :g2, sustain: 12
+sleep 2
+play :g2, sustain: 12
+play :b2, sustain: 12
+play :d3, sustain: 12
+play :d5, sustain: 12
+sleep 1.1
+play :b2, sustain: 12
+play :d3, sustain: 12
+play :d5, sustain: 12
+play :a3, sustain: 12
+sleep 3
 
 live_loop :intro do
   sample :drum_bass_soft
